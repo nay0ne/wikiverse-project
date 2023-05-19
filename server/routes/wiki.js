@@ -6,7 +6,7 @@ const { Page, User, Tag } = require("../models");
 router.get("/", async (req, res, next) => {
   try {
     const pages = await Page.findAll();
-    res.send(pages);
+    res.json(pages);
   } catch (error) {
     next(error);
   }
