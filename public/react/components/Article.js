@@ -13,8 +13,8 @@ export const Article = ({ page, idx}) => {
             <div className = 'body'>
             <p className = 'author'>Author:</p>
             <p className = 'content'>{page.content}</p>
-            <p className = 'tags'>Published: {dateFormat(page.createdAt, "mmmm dS, yyyy")}</p>
-            <p className = 'date'>{}</p>
+            <p className = 'tags'>{}</p>
+            <p className = 'date' time datetime="{page.createdAt}">Published: {dateFormat(page.createdAt, "mmmm dS, yyyy")}</p>
             <button ></button>
             </div>
             </div>
