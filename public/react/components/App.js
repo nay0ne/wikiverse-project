@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { PagesList } from './PagesList';
 
+
 // import and prepend the api url to any fetch calls
 import apiURL from '../api';
 
@@ -26,7 +27,10 @@ export const App = () => {
 		<main>	
       <h1>WikiVerse</h1>
 			<h2>An interesting 📚</h2>
+			{/*  passing the pages prop to pagelist */}
 			<PagesList pages={pages} />
+			
+			
 		</main>
 	)
 }
