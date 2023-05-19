@@ -12,7 +12,7 @@ const [showContent, setShowContent] = useState(false);
     <div>
       
       <h3 onClick={()=> setShowContent(true)}>{page.title}</h3>
-      <button onClick={() => setShowContent(!showContent)}>Back to Wiki List</button>
+      <button onClick={() => setShowContent(false)}>Back to Wiki List</button>
      {
       showContent && <Article page={page} key={idx} />
       
