@@ -29,11 +29,7 @@ export const PagesList = ({pages}) => {
 				return <Page page={page} key={idx} />
 			})
 		}
-		{/* {
-			users.map((author) => {
-				return <Page author={author}/>
-			})
-		} */}
+	
 
 	</>
 } 
