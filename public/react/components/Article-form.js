@@ -15,9 +15,11 @@ export const Form = () => {
 
     }
 
-    return 
-        <>
-            <form className= "form" onSubmit={handleSubmit} aria-label="form">
+    return <>
+
+                <h1>Article Details</h1>
+
+                <form className= "form" onSubmit={handleSubmit} aria-label="form">
                 <h3>Add Page</h3>
                 <input className= "title" type="text" aria-label= "title" value={title} onChange={e => setTitle(e.target.value)} placeholder="Add Title" ></input>
                 <input className= "content" type="text" aria-label="content" value={content} onChange={e => setContent(e.target.value)} placeholder="Add your Content" ></input>
@@ -27,6 +29,5 @@ export const Form = () => {
                 <button type="submit">Create Page</button>
 
             </form>
-        </>
-
+    </>
 }

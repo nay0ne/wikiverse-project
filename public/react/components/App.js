@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { PagesList } from './PagesList';
+import { Form } from './Article-form'
 
 
 
@@ -37,7 +38,7 @@ export const App = () => {
 			<PagesList pages={pages} />
 			<button onClick={() => setIsAddingArticle(!isAddingArticle)}>Create a new Article!</button>
 				{
-      				showContent && <Form />
+      				isAddingArticle && <Form />
      			}
 			
 			
