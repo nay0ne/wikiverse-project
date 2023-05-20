@@ -9,6 +9,12 @@ export const Form = () => {
     const [email, setEmail] = useState()
     const [tags, setTags] = useState()
 
+    function handleSubmit(email) {
+        e.preventDefault
+        // Todo: insert POST request- maybe send data to new array and then .map to a POST request in separate component? look into this
+
+    }
+
     return 
         <>
             <form className= "form" onSubmit={handleSubmit} aria-label="form">

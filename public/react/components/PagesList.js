@@ -6,7 +6,7 @@ import { Page } from './Page';
 
 
 export const PagesList = ({pages}) => {
-
+//  Todo look into the below for getting user info across to the page- not working currently, also tags?
 // 	const [users, setUsers] = useState([])
 
 // async function fetchUsers(){
