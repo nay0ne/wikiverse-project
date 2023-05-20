@@ -1,20 +1,25 @@
 import React from 'react'
+import { useState } from 'react'
 
 export const Form = () => {
 
+    const [title, setTitle] = useState()
+    const [content, setContent] = useState()
+    const [name, setName] = useState()
+    const [email, setEmail] = useState()
+    const [tags, setTags] = useState()
+
     return 
         <>
-            <form>
+            <form className= "form" onSubmit={handleSubmit} aria-label="form">
                 <h3>Add Page</h3>
-                <input className= "title" type="text" value={}></input>
-                <input className= "name" type ='text'></input>
-                <input className= "content" type="text"></input>
-                <input className= "name" type="text"></input>
-                <input className= "email"></input>
-                <label>
-                    <input className= "tags">
-                    </input>
-                </label>
+                <input className= "title" type="text" aria-label= "title" value={title} onChange={e => setTitle(e.target.value)}></input>
+                <input className= "content" type="text" aria-label="content" value={content} onChange={e => setContent(e.target.value)}></input>
+                <input className= "name" type="text" aria-label="name" value={name} onChange={e => setName(e.target.value)}></input>
+                <input className= "email"type="text" aria-label="email" value={email} onChange={e => setEmail(e.target.value)}></input>
+                <input className= "tags" type="text" aria-label="tags" value={tags} onChange={e => setTags(e.target.value)}></input>
+                <button type="submit">Create Page</button>
+
             </form>
         </>
 
